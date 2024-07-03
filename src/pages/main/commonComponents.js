@@ -6,7 +6,9 @@ const BRIGHT_PURPLE_COLOR = `#9F88F2`;
 const LIGHT_PURPLE_COLOR = `#D9CDF1`;
 const WHITE_PURPLE_COLOR = `#E6E4F2`;
 const LIGHT_GRAY_COLOR = `#FDFDFD`;
+const GRAY_COLOR = `#a0a0a0`;
 const WHITE_COLOR = `#FFFFFF`;
+const BLACK_COLOR = "#000000";
 
 const BORDER = `1px solid ${BRIGHT_PURPLE_COLOR}`;
 const BORDER_RADIUS = `15px`;
@@ -103,14 +105,14 @@ export const Content = styled.div`
   .content-title {
     font-size: 20px;
     padding: 5px;
-    color: ${DEEP_PURPLE_COLOR};
+    color: ${BLACK_COLOR};
     margin-bottom: 8px;
   }
 
   .content-description {
     font-size: 16px;
     padding: 5px;
-    color: ${BRIGHT_PURPLE_COLOR};
+    color: ${GRAY_COLOR};
   }
 `;
 
@@ -133,13 +135,13 @@ export const MainContent = styled.div`
 
   .content-title {
     font-size: 20px;
-    color: ${DEEP_PURPLE_COLOR};
+    color: ${BLACK_COLOR};
     padding: 5px;
   }
 
   .content-description {
     font-size: 16px;
     padding: 5px;
-    color: ${BRIGHT_PURPLE_COLOR};
+    color: ${GRAY_COLOR};
   }
 `;
