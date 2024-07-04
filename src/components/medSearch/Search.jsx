@@ -15,26 +15,15 @@ const BORDER_RADIUS = `5px`;
 
 export const SearchWrapper = styled.div`
     width: 90%;
+    height: 150px;
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     
     background-color: ${LIGHT_GRAY_COLOR};
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
 
-`;
-
-
-export const SearchButton = styled.button `
-    width: 80px;
-    height: 40px;
-    
-    background-color : ${WHITE_COLOR};
-    color: ${DEEP_PURPLE_COLOR};
-    border: 1px solid ${DEEP_PURPLE_COLOR};
-    border-radius: ${BORDER_RADIUS};
-    
 `;
 
 export const SearchInput = styled.input`
@@ -48,3 +37,25 @@ export const SearchInput = styled.input`
     
     font-size: 15px;
 `;
+
+export const SearchButtonWrapper = styled.div`
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+     
+    margin-bottom: 2vh;
+`;
+
+export const SearchButton = styled.button `
+    width: 100px;
+    height: 40px;
+    margin-right: 5px;
+    
+    background-color : ${WHITE_COLOR};
+    color: ${DEEP_PURPLE_COLOR};
+    border: 1px solid ${DEEP_PURPLE_COLOR};
+    border-radius: ${BORDER_RADIUS};
+    
+`;
+
