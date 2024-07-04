@@ -8,6 +8,7 @@ import {
     Content,
     MainContent,
 } from "../components/common/commonComponents";
+import {SearchButton} from "../components/medSearch/search";
 
 class MedSearch extends React.Component{
 
@@ -22,7 +23,7 @@ class MedSearch extends React.Component{
                     <Title>MedSearch</Title>
                 </TitleWrapper>
                 <ContentWrapper>
-
+                    <SearchButton>Search</SearchButton>
                 </ContentWrapper>
 
             </WholeWrapper>
