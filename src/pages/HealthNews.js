@@ -7,7 +7,7 @@ import {
   ContentWrapper,
   Content,
   MainContent,
-} from "../components/commonComponents";
+} from "../components/common/commonComponents";
 
 class HealthNews extends React.Component {
   constructor(props) {
