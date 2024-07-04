@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/main/components/Home";
-import HealthNews from "./pages/main/components/HealthNews";
-import MedSearch from "./pages/main/components/MedSearch";
-import Navigationbar from "./pages/main/components/Navigationbar";
+import Home from "./pages/Home";
+import HealthNews from "./pages/HealthNews";
+import MedSearch from "./pages/MedSearch";
+import Navigationbar from "./components/Navigationbar";
 
 function App() {
   return (

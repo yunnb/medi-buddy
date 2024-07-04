@@ -3,7 +3,7 @@ import {
   NavigationbarWrapper,
   NavigationbarLink,
   HomeIconWrapper,
-} from "../commonComponents";
+} from "./commonComponents";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ManageSearchIcon from "@mui/icons-material/ManageSearch";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
