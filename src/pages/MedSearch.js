@@ -1,14 +1,11 @@
 import React from 'react';
 import {
     WholeWrapper,
-    Wrapper,
     TitleWrapper,
     Title,
-    ContentWrapper,
-    Content,
-    MainContent,
 } from "../components/common/commonComponents";
-import {SearchButton} from "../components/medSearch/search";
+import {SearchInput, SearchWrapper} from "../components/medSearch/Search";
+import {ListWrapper, ListItem} from "../components/medSearch/ListItem";
 
 class MedSearch extends React.Component{
 
@@ -22,9 +19,45 @@ class MedSearch extends React.Component{
                 <TitleWrapper>
                     <Title>MedSearch</Title>
                 </TitleWrapper>
-                <ContentWrapper>
-                    <SearchButton>Search</SearchButton>
-                </ContentWrapper>
+                <SearchWrapper>
+                    <SearchInput placeholder="search"></SearchInput>
+                </SearchWrapper>
+                <ListWrapper>
+                    <ListItem>
+                        <div className='item-image'></div>
+                        <div className="item-name">Item</div>
+                    </ListItem>
+                    <ListItem>
+                        <div className='item-image'></div>
+                        <div className="item-name">Item</div>
+                    </ListItem>
+                    <ListItem>
+                        <div className='item-image'></div>
+                        <div className="item-name">Item</div>
+                    </ListItem>
+                    <ListItem>
+                        <div className='item-image'></div>
+                        <div className="item-name">Item</div>
+                    </ListItem>
+                    <ListItem>
+                        <div className='item-image'></div>
+                        <div className="item-name">Item</div>
+                    </ListItem>
+                    <ListItem>
+                        <div className='item-image'></div>
+                        <div className="item-name">Item</div>
+                    </ListItem>
+                    <ListItem>
+                        <div className='item-image'></div>
+                        <div className="item-name">Item</div>
+                    </ListItem>
+                    <ListItem>
+                        <div className='item-image'></div>
+                        <div className="item-name">Item</div>
+                    </ListItem>
+
+
+                </ListWrapper>
 
             </WholeWrapper>
         );

@@ -12,10 +12,8 @@ import {
     BLACK_COLOR,
 } from "../../constants/colors";
 
-import {
-    BORDER,
-    BORDER_RADIUS,
-} from "../../constants/borders";
+const BORDER = `1px solid ${BRIGHT_PURPLE_COLOR}`;
+const BORDER_RADIUS = `15px`;
 
 export const NavigationbarWrapper = styled.div`
   width: 100%;

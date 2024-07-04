@@ -1,7 +1,6 @@
 import React from "react";
 import {
   WholeWrapper,
-  Wrapper,
   TitleWrapper,
   Title,
   ContentWrapper,
