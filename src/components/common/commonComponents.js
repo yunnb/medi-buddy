@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const DEEP_PURPLE_COLOR = `#7D79F2`;
-const BRIGHT_PURPLE_COLOR = `#9F88F2`;
-const LIGHT_PURPLE_COLOR = `#D9CDF1`;
-const WHITE_PURPLE_COLOR = `#E6E4F2`;
-const LIGHT_GRAY_COLOR = `#FDFDFD`;
-const GRAY_COLOR = `#a0a0a0`;
-const WHITE_COLOR = `#FFFFFF`;
-const BLACK_COLOR = "#000000";
+import {
+    DEEP_PURPLE_COLOR,
+    BRIGHT_PURPLE_COLOR,
+    LIGHT_PURPLE_COLOR,
+    WHITE_PURPLE_COLOR,
+    LIGHT_GRAY_COLOR,
+    GRAY_COLOR,
+    WHITE_COLOR,
+    BLACK_COLOR,
+} from "../../constants/colors";
 
 const BORDER = `1px solid ${BRIGHT_PURPLE_COLOR}`;
 const BORDER_RADIUS = `15px`;
