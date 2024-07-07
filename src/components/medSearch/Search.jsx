@@ -54,5 +54,4 @@ export const SearchButton = styled.button `
     color: ${DEEP_PURPLE_COLOR};
     border: 1px solid ${DEEP_PURPLE_COLOR};
     border-radius: ${BORDER_RADIUS};
-    
 `;
