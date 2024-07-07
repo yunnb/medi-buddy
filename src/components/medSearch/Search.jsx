@@ -11,11 +11,10 @@ import {
 } from "../../constants/colors";
 
 const BORDER_RADIUS = `5px`;
-
+const MARGIN_BOTTOM = `8px`
 
 export const SearchWrapper = styled.div`
     width: 90%;
-    height: 150px;
     
     display: flex;
     flex-direction: column;
@@ -38,6 +37,8 @@ export const SearchInput = styled.input`
     font-size: 15px;
 `;
 
+
+
 export const SearchButtonWrapper = styled.div`
     width: 300px;
     display: flex;
@@ -58,4 +59,3 @@ export const SearchButton = styled.button `
     border-radius: ${BORDER_RADIUS};
     
 `;
-
