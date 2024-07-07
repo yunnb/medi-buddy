@@ -44,8 +44,6 @@ export const SearchButtonWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-     
-    margin-bottom: 2vh;
 `;
 
 export const SearchButton = styled.button `

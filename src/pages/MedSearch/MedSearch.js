@@ -5,7 +5,6 @@ import {
     Title,
 } from "../../components/common/commonComponents";
 import {
-    SearchDetailShapeWrapper,
     SearchButton,
     SearchButtonWrapper,
     SearchInput,
@@ -13,15 +12,30 @@ import {
 } from "../../components/medSearch/Search";
 import {ListWrapper, ListItem, ListItemName} from "../../components/medSearch/ListItem";
 import SearchShape from "./SearchShape";
+import SearchSymptom from "./SearchSymptom";
 
 function MedSearch(props) {
-    const [visible, setVisible] = useState(false);
+    const [buttons, setButtons] = useState({
+        shape: false,
+        symptom: false,
+    });
 
-    const handleSearchButtonClick = e => {
+    const {shape, symptom} = buttons;  // 비구조화 할당을 통해 값 추출
+
+    const handleSearchButtonClick = (e) => {
         const {name} = e.target;
-        console.log({name});
 
-        setVisible(!visible);
+        if (name === "shapeButton") {
+            setButtons({
+                shape: !shape,
+                symptom: false,
+            })
+        } else if (name === "symptomButton") {
+            setButtons({
+                shape: false,
+                symptom: !symptom,
+            })
+        }
     }
 
     return (
@@ -40,11 +54,13 @@ function MedSearch(props) {
                         약 모양 ▼
                     </SearchButton>
                     <SearchButton
-                        name='symptomButton'>
+                        name='symptomButton'
+                        onClick={handleSearchButtonClick}
+                    >
                         증상 ▼
                     </SearchButton>
                 </SearchButtonWrapper>
-                {visible && <SearchShape /> }
+                {shape ? <SearchShape /> : symptom ? <SearchSymptom /> : null}
             </SearchWrapper>
             <ListWrapper>
                 <ListItem>
