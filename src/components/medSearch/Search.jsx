@@ -11,7 +11,6 @@ import {
 } from "../../constants/colors";
 
 const BORDER_RADIUS = `5px`;
-const MARGIN_BOTTOM = `8px`
 
 export const SearchWrapper = styled.div`
     width: 90%;
