@@ -35,40 +35,18 @@ function SearchSymptom(props) {
                 </SearchShapeButtonWrapper>
             </SearchShapeItemWrapper>
             <SearchShapeItemWrapper>
-                <SearchShapeTitle>색상</SearchShapeTitle>
+                <SearchShapeTitle>2</SearchShapeTitle>
                 <SearchShapeButtonWrapper>
-                    <SearchShapeButton onClick={handleButtonClick}>하양</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>노랑</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>주황</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>분홍</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>빨강</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>갈색</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>연두</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>초록</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>청록</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>파랑</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>남색</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>자주</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>보라</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>회색</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>검정</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>투명</SearchShapeButton>
                 </SearchShapeButtonWrapper>
             </SearchShapeItemWrapper>
             <SearchShapeItemWrapper>
-                <SearchShapeTitle>제형</SearchShapeTitle>
+                <SearchShapeTitle>3</SearchShapeTitle>
                 <SearchShapeButtonWrapper>
-                    <SearchShapeButton onClick={handleButtonClick}>정제류</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>경질캡슐</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>연질캡슐</SearchShapeButton>
                 </SearchShapeButtonWrapper>
             </SearchShapeItemWrapper>
             <SearchShapeItemWrapper>
-                <SearchShapeTitle>분할선</SearchShapeTitle>
+                <SearchShapeTitle>4</SearchShapeTitle>
                 <SearchShapeButtonWrapper>
-                    <SearchShapeButton onClick={handleButtonClick}>(-)형</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>(+)형</SearchShapeButton>
-                    <SearchShapeButton onClick={handleButtonClick}>기타</SearchShapeButton>
                 </SearchShapeButtonWrapper>
             </SearchShapeItemWrapper>
         </SearchShapeWrapper>
