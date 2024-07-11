@@ -7,7 +7,7 @@ import {
 } from "../../components/medSearch/SearchShape";
 
 
-function SearchSymptom(props) {
+function SearchSymptom() {
     const [click, setClick] = useState(false);
 
     const handleButtonClick = e => {

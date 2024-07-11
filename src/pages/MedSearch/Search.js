@@ -3,10 +3,16 @@ import SearchShapeList from "./SearchShapeList";
 import SearchSymptom from "./SearchSymptom";
 import React from "react";
 
-function Search({buttons, handleSearchButtonClick}) {
+function Search({searchTexts, buttons, handleChangeSearchText, handleSearchButtonClick}) {
     return (
         <SearchWrapper>
-            <SearchInput placeholder="약 이름 또는 성분 등으로 검색해보세요."></SearchInput>
+            <SearchInput
+                name="searchName"
+                placeholder="약 이름 또는 성분 등으로 검색해보세요."
+                value={searchTexts.searchName}
+                onChange={handleChangeSearchText}
+                onKeyDown={handleChangeSearchText}
+            />
             <SearchButtonWrapper>
                 <SearchButton
                     name='shapeButton'
@@ -20,7 +26,12 @@ function Search({buttons, handleSearchButtonClick}) {
                     증상 ▼
                 </SearchButton>
             </SearchButtonWrapper>
-            {buttons.isShape ? <SearchShapeList/> : buttons.isSymptom ? <SearchSymptom/> : null}
+            {buttons.isShape ?
+                <SearchShapeList
+                    searchId={searchTexts.searchId}
+                    handleChangeSearchText={handleChangeSearchText}
+                /> :
+                buttons.isSymptom ? <SearchSymptom/> : null}
         </SearchWrapper>
     );
 }

@@ -1,5 +1,5 @@
 import {ListItem, ListItemName, ListWrapper} from "../../components/medSearch/ListItem";
-import React, {useState} from "react";
+import React from "react";
 
 function Med({med, clickMedItem}) {
     return (
@@ -34,7 +34,6 @@ function MedList() {
 
     return (
         <ListWrapper>
-
                 {meds.map(med => (
                     <Med
                         med={med}

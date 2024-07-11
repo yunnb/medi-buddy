@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    CBShapeWrapper, SearchShapeButton, SearchShapeButtonWrapper,
+    SearchShapeButton, SearchShapeButtonWrapper,
     SearchShapeItemWrapper,
     SearchShapeTitle,
     SearchShapeWrapper
@@ -21,7 +21,7 @@ function SearchShape({ type, shape, handleButtonClick }) {
     );
 }
 
-function SearchShapeList(props) {
+function SearchShapeList({searchId, handleChangeSearchText}) {
     const createShapeArray = (names) => {
         return names.map((name, index) => ({ id: index + 1, name: name, clicked: false }));
     };
@@ -69,7 +69,13 @@ function SearchShapeList(props) {
     return (
         <SearchShapeWrapper>
             <SearchShapeItemWrapper>
-                <SearchInput placeholder="식별문자 (약의 앞면이나 뒷면의 문자)로 검색해보세요." />
+                <SearchInput
+                    name="searchId"
+                    placeholder="식별문자 (약의 앞면이나 뒷면의 문자)로 검색해보세요."
+                    value={searchId}
+                    onChange={handleChangeSearchText}
+                    onKeyDown={handleChangeSearchText}
+                />
                 <SearchShapeTitle>모양</SearchShapeTitle>
                 <SearchShapeButtonWrapper>
                     {shapes.map(shape => (

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import {
     WholeWrapper,
     TitleWrapper,
@@ -7,7 +7,11 @@ import {
 import MedList from "./MedList";
 import Search from "./Search";
 
-function MedSearch(props) {
+function MedSearch() {
+    const [searchTexts, setSearchText] = useState({
+        searchName: '',
+        searchId: '',
+    });
     const [buttons, setButtons] = useState({
         isShape: false,
         isSymptom: false,
@@ -15,7 +19,24 @@ function MedSearch(props) {
 
     const {isShape, isSymptom} = buttons;  // 비구조화 할당을 통해 값 추출
 
-    const handleSearchButtonClick = (e) => {
+    const handleChangeSearchText = useCallback(e => {
+        const {name, value} = e.target;
+        setSearchText({
+            ...searchTexts,
+            [name]: value
+        });
+
+        if(e.key === "Enter") {
+            console.log("searchText: " + e.target.value);
+            setSearchText({
+                ...searchTexts,
+                [name]: '',
+
+            });
+        }
+    }, [searchTexts]);
+
+    const handleSearchButtonClick = useCallback(e => {
         const {name} = e.target;
 
         if (name === "shapeButton") {
@@ -31,19 +52,21 @@ function MedSearch(props) {
             })
             console.log('click the symptomButton');
         }
-    }
+    }, [isShape, isSymptom]);
 
     return (
         <WholeWrapper>
             <TitleWrapper>
                 <Title>MedSearch</Title>
             </TitleWrapper>
-            <Search buttons={buttons} handleSearchButtonClick={handleSearchButtonClick} />
+            <Search
+                searchTexts={searchTexts}
+                buttons={buttons}
+                handleChangeSearchText={handleChangeSearchText}
+                handleSearchButtonClick={handleSearchButtonClick}/>
             <MedList/>
         </WholeWrapper>
     );
-
 }
-
 
 export default MedSearch;
